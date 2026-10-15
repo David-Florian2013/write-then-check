@@ -1,0 +1,15 @@
+# write-then-check
+
+Two Agent Skills. The checker is a local Python script. No dependency. No network call.
+
+Repo: https://github.com/David-Florian2013/write-then-check
+
+Install for every agent the skills CLI supports:
+
+npx skills add David-Florian2013/write-then-check -g -a '*' -y
+
+writer edits, then stops. checker runs skills/checker/scripts/check.py on the unified diff and returns PASS or FAIL. The loop ends on PASS, on round 3, or when the same FAIL repeats. A PASS is not a claim that the code is correct.
+
+A vague request does not enter the loop. prompt-clarifier, if installed, handles that question: https://github.com/David-Florian2013/prompt-clarifier
+
+MIT.

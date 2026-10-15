@@ -1,0 +1,14 @@
+write-then-check
+checker: skills/checker/scripts/check.py
+model: none    network: none
+cap: 3 rounds, or the same FAIL twice
+
+1  writer adds app.py, a key, and .env
+   FAIL
+   file     .env
+   secret   aws-access-key
+   writer   may not say done
+
+2  writer removes the key and .env
+   PASS
+   stop     round 2

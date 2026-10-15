@@ -1,0 +1,19 @@
+{
+  "name": "write-then-check",
+  "owner": {
+    "name": "David-Florian2013",
+    "url": "https://github.com/David-Florian2013"
+  },
+  "metadata": {
+    "description": "Two skills. One writes. The other checks the diff."
+  },
+  "plugins": [
+    {
+      "name": "write-then-check",
+      "source": "./",
+      "description": "Write the change, then check the diff before calling it done.",
+      "strict": false,
+      "skills": ["./skills/writer", "./skills/checker"]
+    }
+  ]
+}

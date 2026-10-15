@@ -1,0 +1,13 @@
+{
+  "name": "write-then-check",
+  "version": "1.0.0",
+  "description": "One skill writes the change. The other checks the diff and stops the loop on PASS or after three rounds.",
+  "author": {
+    "name": "David-Florian2013",
+    "url": "https://github.com/David-Florian2013"
+  },
+  "homepage": "https://github.com/David-Florian2013/write-then-check",
+  "repository": "https://github.com/David-Florian2013/write-then-check",
+  "license": "MIT",
+  "keywords": ["skills", "code-review", "agent-skills", "codex", "claude-code"]
+}
